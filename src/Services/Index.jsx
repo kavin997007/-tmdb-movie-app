@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-const baseUrl = 'https://api.themoviedb.org/3'
-const apiKey = '787be6f53332ac4e952ae7a69e11eb78'
+const baseUrl = 'https://api.themoviedb.org/3';
+const apiKey = import.meta.env.VITE_TMDB_API_KEY;
 
 export async function fetchTrendingMovies(page = 1) {
   const response = await axios.get(

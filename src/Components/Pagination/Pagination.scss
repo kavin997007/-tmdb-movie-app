@@ -4,6 +4,7 @@
   align-items: center;
   gap: 16px;
   margin: 30px 0;
+  flex-wrap: wrap;
 
   button {
     padding: 10px 20px;
@@ -34,12 +35,49 @@
     height: 45px;
     border-radius: 50%;
     background: #f1f5f9;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     font-size: 16px;
     font-weight: 600;
     color: #1e293b;
+
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .pagination {
+    gap: 12px;
+    margin: 25px 0;
+
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+
+    span {
+      min-width: 40px;
+      height: 40px;
+      font-size: 14px;
+    }
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .pagination {
+    width: 100%;
+    padding: 0 15px;
+
+    button {
+      flex: 1;
+      max-width: 120px;
+    }
   }
 }

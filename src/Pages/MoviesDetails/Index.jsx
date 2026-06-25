@@ -116,7 +116,7 @@ const MovieDetails = () => {
               <div className="cast-list">
                 {cast.slice(0,5).map((actor) => (
 
-                  <Link to={`/actor/${actor.id}`}>
+                  <Link to={`/actor/${actor.id}`} key={actor.id}>
                     <div
                       className="cast-card"
                     >

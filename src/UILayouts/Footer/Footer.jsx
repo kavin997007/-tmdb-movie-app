@@ -1,12 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../../assets/favicon.png';
 import './Footer.scss';
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer__content">
-        <Link to="/"><h3>🎬 404 MoviesInfo</h3></Link>
+        <Link to="/">
+                  <img src={logo} alt="404 MoviesInfo" />
+                  <span>404 MoviesInfo</span>
+                </Link>
 
         <p>
           Discover Popular, Top Rated and Upcoming Movies.

@@ -28,3 +28,46 @@
     line-height: 1.5;
   }
 }
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .card {
+    .card-image {
+      height: 280px;
+    }
+
+    .card-title {
+      font-size: 16px;
+      padding: 10px;
+    }
+
+    .card-description {
+      font-size: 13px;
+      padding: 0 10px 10px;
+    }
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .card {
+    border-radius: 10px;
+
+    .card-image {
+      height: 220px;
+    }
+
+    .card-title {
+      font-size: 14px;
+      padding: 8px;
+    }
+
+    .card-description {
+      font-size: 12px;
+      line-height: 1.4;
+      padding: 0 8px 8px;
+    }
+  }
+}

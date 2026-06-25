@@ -11,14 +11,23 @@
     outline: none;
     font-size: 16px;
     display: block;
-    margin: 0 auto 20px ;
+    margin: 0 auto 20px;
+    transition: 0.3s;
+
+    &:focus {
+      border-color: #ef4444;
+      box-shadow: 0 0 8px rgba(239, 68, 68, 0.2);
+    }
   }
 }
 
 .movies-app {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  );
   gap: 24px;
 }
 
@@ -33,5 +42,41 @@
 
   * {
     text-decoration: none;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 768px) {
+  .main-app {
+    padding: 15px;
+
+    input {
+      max-width: 100%;
+      font-size: 15px;
+    }
+  }
+
+  .movies-app {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
+  .main-app {
+    padding: 10px;
+
+    input {
+      padding: 10px 14px;
+      font-size: 14px;
+    }
+  }
+
+  .movies-app {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
   }
 }
