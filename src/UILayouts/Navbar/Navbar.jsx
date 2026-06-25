@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { auth } from "../../Components/firebase";
 import logo from '../../assets/favicon.png';
 import './Navbar.scss';
+import { signOut } from "firebase/auth";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
