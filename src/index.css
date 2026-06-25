@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+:root {
+  --background: #0f172a;
+  --card: #1e293b;
+  --primary: #ef4444;
+  --text: #ffffff;
+  --text-secondary: #cbd5e1;
+}

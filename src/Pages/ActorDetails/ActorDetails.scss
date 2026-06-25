@@ -1,0 +1,148 @@
+.actor-details {
+  max-width: 1400px;
+  margin: 40px auto;
+  padding: 20px;
+  color: #fff;
+}
+
+.actor-details button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background: #ef4444;
+  color: white;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: 0.3s;
+}
+
+.actor-details button:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+}
+
+.actor-info {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  background: #1e293b;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
+}
+
+.actor-info img {
+  width: 320px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.actor-info div {
+  flex: 1;
+}
+
+.actor-info h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.actor-info p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+  color: #cbd5e1;
+}
+
+.actor-info strong {
+  color: #fff;
+}
+
+.actor-movies {
+  margin-top: 50px;
+}
+
+.actor-movies h2 {
+  margin-bottom: 25px;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(180px, 1fr)
+  );
+  gap: 25px;
+}
+
+.movie-grid a {
+  text-decoration: none;
+  background: #1e293b;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.movie-grid a:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,.4);
+}
+
+.movie-grid img {
+  width: 100%;
+  height: 270px;
+  object-fit: cover;
+}
+
+.movie-grid h4 {
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.loading {
+  min-height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading h2 {
+  color: white;
+  font-size: 2rem;
+}
+
+@media (max-width: 992px) {
+  .actor-info {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .actor-info img {
+    width: 280px;
+  }
+
+  .actor-info h1 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .movie-grid {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(140px, 1fr)
+    );
+  }
+
+  .movie-grid img {
+    height: 220px;
+  }
+
+  .actor-info {
+    padding: 20px;
+  }
+}
