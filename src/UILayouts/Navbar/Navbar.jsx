@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
+import { auth } from "../../Components/firebase";
 import logo from '../../assets/favicon.png';
 import './Navbar.scss';
 
@@ -8,10 +9,12 @@ const Navbar = () => {
 
   const navigate = useNavigate();
 
- const handleLogout = () => {
-  localStorage.removeItem('accessToken');
-  navigate('/login');
-  window.location.reload();
+const handleLogout = async () => {
+  await signOut(auth);
+
+  localStorage.removeItem("accessToken");
+
+  navigate("/login", { replace: true });
 };
 
   return (
