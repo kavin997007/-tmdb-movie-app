@@ -5,6 +5,9 @@ A modern Movie Discovery Web Application built with React, Firebase Authenticati
 Users can browse trending movies, search movies, view detailed movie information, watch trailers, explore actor profiles, and see movies acted by their favorite actors.
 
 ---
+## Live Demo
+
+https://404moviesinfo.netlify.app
 
 ## 🚀 Features
 
